@@ -1,4 +1,8 @@
+/.*.swp
 /*.md
+/.glide
+/.vendor
 /LICENSE
+/prom-alert-notifier
 /test
 /vendor
