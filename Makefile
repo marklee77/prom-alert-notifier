@@ -7,7 +7,6 @@ prom-alert-notifier: main.go .vendor
 clean:
 	rm -rf prom-alert-notifier .vendor vendor
 
-
 GOLINT := $(shell command -v golint 2>/dev/null)
 golint:
 ifndef GOLINT
