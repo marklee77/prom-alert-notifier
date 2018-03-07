@@ -1,5 +1,5 @@
 hash: b57d0366467ce16360373ea86fecf505a5172f8d78da037234db5bd8334798ee
-updated: 2018-03-07T19:44:57.245146176Z
+updated: 2018-03-07T23:30:26.361681516Z
 imports:
 - name: github.com/mattn/go-gtk
   version: 5a311a1830abecc430a6a598b24094f69d907e96
