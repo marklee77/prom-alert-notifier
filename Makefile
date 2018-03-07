@@ -33,4 +33,5 @@ endif
 
 glide.lock: .glide glide.yaml
 	glide update
+	touch glide.lock
 
