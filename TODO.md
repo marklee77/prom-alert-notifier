@@ -4,3 +4,4 @@
 - export prometheus metrics
 - travis/circle ci
 - autobuild on docker
+- make sure go get works
