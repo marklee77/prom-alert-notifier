@@ -1,4 +1,4 @@
-package: stillwell.me/prom-alert-notifier
+package: github.com/marklee77/prom-alert-notifier
 import:
 - package: github.com/mqu/go-notify
 - package: github.com/simplereach/timeutils
