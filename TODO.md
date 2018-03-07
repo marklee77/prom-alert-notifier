@@ -1,0 +1,6 @@
+- Dockerfile
+- build system (glide?)
+- build in container, but final image from scratch
+- export prometheus metrics
+- travis/circle ci
+- autobuild on docker
