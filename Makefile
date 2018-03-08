@@ -1,5 +1,9 @@
 PACKAGE=prom-alert-notifier
-.PHONY: clean glide golint install test vendor
+REPOSITORY=marklee77/$(PACKAGE)
+TAG=latest
+IMAGE=$(REPOSITORY):$(TAG)
+
+.PHONY: clean docker glide golint install test vendor
 
 prom-alert-notifier: main.go .vendor
 	go build -ldflags='-s -w'
@@ -9,6 +13,9 @@ install: prom-alert-notifier test
 
 clean:
 	rm -rf prom-alert-notifier .vendor vendor
+
+docker:
+	docker build -t $(IMAGE) .
 
 GOLINT := $(shell command -v golint 2>/dev/null)
 golint:
