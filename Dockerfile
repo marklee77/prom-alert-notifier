@@ -1,4 +1,5 @@
 FROM alpine:3.7 AS build
+LABEL maintainer="Mark Stillwell <mark@stillwell.me>"
 
 # avoid installing these packages twice
 RUN apk add --update --no-cache glib libnotify && \
@@ -21,6 +22,7 @@ WORKDIR /go/src/github.com/marklee77/prom-alert-notifier
 RUN make install
 
 FROM alpine:3.7
+LABEL maintainer="Mark Stillwell <mark@stillwell.me>"
 
 RUN apk add --update --no-cache glib libnotify && \
     rm -rf /var/cache/apk/*
