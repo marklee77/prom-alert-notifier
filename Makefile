@@ -2,7 +2,7 @@ PACKAGE=prom-alert-notifier
 .PHONY: clean glide golint install test vendor
 
 prom-alert-notifier: main.go .vendor
-	go build
+	go build -ldflags='-s -w'
 
 install: prom-alert-notifier test
 	go install
